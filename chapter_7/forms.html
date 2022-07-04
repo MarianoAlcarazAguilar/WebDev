@@ -1,0 +1,105 @@
+<!--
+    FORMS
+    Son para recolectar información del usuario. Hay diferentes tipos de forms.
+
+        ADDING TEXT
+        -Text input: single line (como para correos electrónicos)
+        -Password input: lo mismo que text pero esconde el texto.
+        -Text area: para inputs más largos.
+
+        CHOICES
+        -Radio buttons: cuando debe seleccionar una sola opción
+        -Checkboxes: cuando el usuario puede seleccionar o deseleccionar una o varias opciones
+        -Drop Down boxes: cuando el usuario debe elegir una de varias opciones (mucha varias)
+
+        SUBMITTING FORMS
+        -Submit button: para subirlo a otra página
+        -Image button: te permite poner una imagen a manera de botón
+        
+        UPLOADING FILES
+        -File upload: permite al usuario cargar documentos a una página
+
+    FORM STRUCTURE
+    <form action=""></form>: los conroles del form viven dentro de este elemento. Siempre tiene el atributo action que normalmente tendrá también el atributo método y id.
+        action: el valor es el url de la página que recibirá la información que se suba
+        method: el valor puede ser GET or POST
+            get: el valor que se suba se agrega al final del url de action, por lo que es bueno para pequeños forms,a lo mejor de búsqueda. Es bueno en general para consultas.
+            post: la información se sube en HTTP readers. Se usa cuando se quiere subir un archivo, es muy largo, sensitive data, agrega o elimina información de una base de datos.
+
+        TEXT INPUT
+        <input type="text" name="username">: Se usa este elemento vacío. Va dentro del elemento form (es un tipo de control).
+            Puede tener distintos tipos de type, si es text es solo una línea.
+            name es necesario para que el servidor sepa qué se le está enviando.
+            Puedes usar el atributo maxlength para limitar el tamaño del texto ingresado.
+
+        PASSWORD INPUT
+        <input type="password" name="password">: Es básicamente lo mismo que el anterior pero si te fijas lo que cambia es el tipo.
+
+        TEXT AREA
+        <textarea name="" id="" cols="30" rows="10"></textarea>: Se usa para crear multi-line input. Este NO es un elemento vacío.
+            Lo que sea que está entre los tags también se envía. Normalmente se usa JavaScript para limpiarlo cuando el usuario hace click
+
+        RADIO BUTTON
+        Una vez que se selecciona una opción, ya no se puede deseleccionar.
+        Esto se explica mejor con un ejemplo:
+            <form action="link.com">
+                <p>
+                    Please select your genre:
+                    <br>
+                    <input type="radio" name="genre" value="male" checked="checked"> male
+                    <input type="radio" name="genre" value="female"> female
+                    <input type="radio" name="genre" value="other"> other
+                </p>
+            </form>
+        
+        CHECKBOCK
+        De igual forma se explica mejor con un ejemplo:
+            <form action="link.com">
+                <p>
+                    Please, select your music streaming device:
+                    <br>
+                    <input type="checkbox" name="device" value="headphones">headphones
+                    <input type="checkbox" name="device" value="speaker">speaker
+                    <input type="checkbox" name="device" value="none">none
+                </p>
+            </form>
+        
+        DROP DOWN LIST BOX
+        Permite al usuario seleccionar una opción de una lista dada.
+        Ejemplo:
+        <form action="link.com">
+            <p>
+                What device do you listen yo music on?
+            </p>
+            <select name="devices" id="no_se">
+                <option value="iPod">iPod</option>
+                <option value="Radio">Radio</option>
+                <option value="Computer">Computer</option>
+            </select>
+        </form>
+
+        FILE INPUT BOX
+        Ejemplo:
+        <form action="link.com" method="post">
+            <p>upload your song:</p>
+            <input type="file" name="user-song">
+        </form>
+
+        SUBMIT BUTTON
+        <input type="submit" value="subscribe">: value es el texto que el botón va a mostrar
+
+        IMAGE BUTTON
+        Ejemplo:
+        <form action="link.com">
+            <p>subscribe to our email list:</p>
+            <input type="text" name="email">
+            <input type="image" src="images/subscribe.jpg" width="100" height="20">
+        </form>
+
+        BUTTON & HIDDEN CONTROLS
+        <button></button>: este elemento permite mostrar de distintas maneras los botones. Se puede, por ejemplo, agregar imágenes.
+        <input type="hidden">: este se puede usar si por ejemplo el desarrollador quiere agregar información para él mismo al subirlo.
+
+-->
+
+
