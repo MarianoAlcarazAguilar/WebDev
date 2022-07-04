@@ -1,0 +1,87 @@
+<!--
+    BASIC TABLE STRUCTURE
+    <table></table>: Se usa para crear una tabla. Los contenidos de la tabla se escriben row by row.
+        <tr></tr>: (table row) indica el inicio de cada row. Seguido de uno o mas td elements.
+            <td></td>: cada elemento de la tabla en la row correspondiente.
+
+    TABLE HEADINGS
+    <th></th>: (tabble heading) se usa como el elemento td, pero su propósito es representar el nombre de cada columna de la tabla. 
+    Puede tener el atributo scope, ya sea con el valor de row o col
+
+    SPANNING COLUMNS
+    A veces necesitas que la entrada de una tabla se alargue a más de una columna, entonces tienes 
+    que especificar en td o en th cuánto debe extenderse con el atributo COLSPAN y de valor pones el
+    número de columnas.
+
+    SPANNING ROWS
+    De la misma manera lo puedes querer a través de rows. Entonces usas el atributo ROWSPAN y de valor
+    pones el número de rows tanto en td como en th.
+
+    LONG TABLES
+    Básicamente es para darle mejor estructura a la tabla y luego poderla editar con CSS.
+    <thead></thead>: aquí pones normalmente los headings de la tabla
+    <tbody></tbody>: aquí va el cuerpo (lo de adentro de la tabla). También puede tener headings.
+    <tfoot></tfoot>: es el pie de la tabla.
+-->
+<html>
+    <head>
+        <title>
+            Tables
+        </title>
+    </head>
+    <body>
+        <h1>Tables</h1>
+        <p>A continuación se muestra un ejemplo de tabla con todos los atributos</p>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Home Starter Hosting</th>
+                    <th>Premium business hosting</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Disk space</th>
+                    <td>250mb</td>
+                    <td>1gb</td>
+                </tr>
+                <tr>
+                    <th>Bandwidth</th>
+                    <td>5gb p/m</td>
+                    <td>50 gb p/m</td>
+                </tr>
+                <tr>
+                    <th>Email Accounts</th>
+                    <td>3</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th>Server</th>
+                    <td>Shared</td>
+                    <td>VPS</td>
+                </tr>
+                <tr>
+                    <th>Support</th>
+                    <td>email</td>
+                    <td>telephone and email</td>
+                </tr>
+                <tr>
+                    <th>Setup</th>
+                    <td>free</td>
+                    <td>free</td>
+                </tr>
+                <tr>
+                    <th>FTP accounts</th>
+                    <td>1</td>
+                    <td>5</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td></td>
+                <td colspan="2">Sign up now and save 10%</td>
+            </tfoot>
+        </table>
+    </body>
+</html>
+
