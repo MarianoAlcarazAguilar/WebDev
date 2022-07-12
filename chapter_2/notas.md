@@ -14,12 +14,13 @@
 
 ## Headings `<h1>`
 Hay seis niveles, y sirve para distinguir la importancia de los títulos que se usen.
-> \<h1>
->> \<h2>
->>> \<h3>
->>>> \<h4>
->>>>> \<h5>
->>>>>> \<h6>
+- \<h1>
+    - \<h2>
+        - \<h3>
+            - \<h4>
+                - \<h5>
+                    - \<h6>
+
 
 ## Paragraphs `<p>`
 Rodeas el texto entre **p**  
