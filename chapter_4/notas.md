@@ -11,11 +11,11 @@ Si damos click en
 | Contenidos | Notas | Ejemplo |
 | ---------- | ----- | ------- |
 | Links to other sites | href="dirección absoluta" | <a href="http://www.google.com">google</a> |
-| Links to other pages<br>in same site | href="dirección relativa " | <a href="./links.html">links html file</a> |
+| Links to other pages in same site | href="dirección relativa " | <a href="./links.html">links html file</a> |
 | Email links | href="mailto:email_adress.com" | <a href="mailto:marianoaaguilar@hotmail.com">mail mariano</a> |
 | Links in new windows | target="_blank" | <a href="http://www.google.com" target="_blank">google</a> | 
-| Link to a specific part<br>of the same page | href="#id_value" | <a href="#prueba"> link to my code</a> |
-| Link to a specific part<br>of another page | href="direccion_absoluta/relativa #id_vlaue" | <a href="links.html#header">header otra página</a> |
+| Link to a specific part of the same page | href="#id_value" | <a href="#prueba"> link to my code</a> |
+| Link to a specific part of another page | href="direccion_absoluta/relativa#id_vlaue" | <a href="links.html#header">header otra página</a> |
 
 ## Links to other sites
 ~~~html
