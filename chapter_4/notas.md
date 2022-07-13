@@ -1,5 +1,4 @@
-# Links
-Se crean usando el tag `<a>`.  
+# Links `<a>`
 Los usuarios pueden hacer click sobre cualquier parte entre los tags y los redirecciona a donde sea que **href** diga.  
 
 Si damos click en 
